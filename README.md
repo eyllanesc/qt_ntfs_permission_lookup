@@ -1,2 +1,2 @@
 # qt_ntfs_permission_lookup
-Qt_ntfs_permission_lookup implementation for PyQt5/PySide2
+qt_ntfs_permission_lookup implementation for PyQt5/PySide2
