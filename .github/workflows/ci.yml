@@ -18,7 +18,6 @@ jobs:
         os:
           - name: Windows
             runs-on: windows-latest
-            python_platform: win32
         python: [3.6, 3.7, 3.8]
         qt: [5.14.0, 5.14.1, 5.14.2, 5.15.0]
 
@@ -42,3 +41,6 @@ jobs:
           dir: "${{ github.workspace }}/qt/"
       - name: install
         run: python setup.py install
+      - name: testing
+        run: python main.py
+        
