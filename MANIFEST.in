@@ -1,0 +1,9 @@
+include LICENSE
+include README.md
+
+include CMakeLists.txt
+recursive-include qt_ntfs_permission_lookup *
+
+recursive-include tests *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
