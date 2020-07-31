@@ -47,4 +47,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           path: dist/*
-          name: Python${{ matrix.python }}-Qt${{ matrix.qt }}
+          name: qt_ntfs_permission-Python${{ matrix.python }}-Qt${{ matrix.qt }}

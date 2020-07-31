@@ -98,15 +98,15 @@ setup(
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
     ],
-    description="qt_ntfs_permission_lookup implementation for PyQt5/PySide2",
+    description="qt_ntfs_permission implementation for PyQt5/PySide2",
     install_requires=requirements,
     license="GNU General Public License v3",
     long_description=readme,
     include_package_data=True,
-    keywords="qt_ntfs_permission_lookup",
-    name="qt_ntfs_permission_lookup",
+    keywords="qt_ntfs_permission",
+    name="qt_ntfs_permission",
     packages=find_packages(
-        include=["qt_ntfs_permission_lookup", "qt_ntfs_permission_lookup.*"]
+        include=["qt_ntfs_permission", "qt_ntfs_permission.*"]
     ),
     setup_requires=setup_requirements,
     test_suite="tests",
@@ -114,6 +114,6 @@ setup(
     url="https://github.com/eyllanesc/qt_ntfs_permission_lookup",
     version="0.1.0",
     zip_safe=False,
-    ext_modules=[CMakeExtension("qt_ntfs_permission_lookup")],
+    ext_modules=[CMakeExtension("qt_ntfs_permission")],
     cmdclass=dict(build_ext=CMakeBuild),
 )

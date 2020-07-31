@@ -30,13 +30,13 @@ add_definitions(-DQT_NO_KEYWORDS)
 
 # FIND_PACKAGE(SQLite3 REQUIRED)
 
-SET(SOURCE_DIR "qt_ntfs_permission_lookup")
+SET(SOURCE_DIR "qt_ntfs_permission")
 include_directories(${SOURCE_DIR})
 
 file(GLOB SOURCES
     "${SOURCE_DIR}/*.cpp"
 )
 
-pybind11_add_module(qt_ntfs_permission_lookup ${SOURCES} "${SOURCE_DIR}/qt_ntfs_permission_lookup.cpp")
+pybind11_add_module(qt_ntfs_permission ${SOURCES} "${SOURCE_DIR}/qt_ntfs_permission.cpp")
 
-target_link_libraries(qt_ntfs_permission_lookup PRIVATE Qt5::Core)
+target_link_libraries(qt_ntfs_permission PRIVATE Qt5::Core)

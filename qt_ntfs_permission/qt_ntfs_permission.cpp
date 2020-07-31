@@ -9,7 +9,7 @@ extern Q_CORE_EXPORT int qt_ntfs_permission_lookup;
 QT_END_NAMESPACE
 #endif
 
-PYBIND11_MODULE(qt_ntfs_permission_lookup, m) {
+PYBIND11_MODULE(qt_ntfs_permission, m) {
 
     m.def("enable", [](){
 #ifdef Q_OS_WIN
