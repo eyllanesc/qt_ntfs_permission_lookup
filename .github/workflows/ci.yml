@@ -40,7 +40,10 @@ jobs:
           version: ${{ matrix.qt }}
           dir: "${{ github.workspace }}/qt/"
       - name: install
-        run: python setup.py install
-      - name: testing
-        run: python main.py
-        
+        run: make install
+      - name: create dist
+        run: make dist
+      - name: upload
+        uses: actions/upload-artifact@v2
+        with:
+          path: dist/*
